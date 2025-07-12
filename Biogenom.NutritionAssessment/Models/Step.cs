@@ -7,12 +7,10 @@ namespace Biogenom.NutritionAssessment.Models
     {
         public int Id { get; set; }
 
-        [Required]
         public int StepNumber { get; set; }
+        [MaxLength(100)]
+        public required string Title { get; set; }
 
-        [Required]
-        public string Title { get; set; }
-
-        public ICollection<Question> Questions { get; set; }
+        public ICollection<Question> Questions { get; set; } =  new List<Question>();
     }
 }

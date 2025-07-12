@@ -1,4 +1,3 @@
-using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Biogenom.NutritionAssessment.Models
@@ -8,12 +7,13 @@ namespace Biogenom.NutritionAssessment.Models
         public Guid Id { get; set; }
 
         public Guid AssessmentResultId { get; set; }
-        public AssessmentResult AssessmentResult { get; set; }
+        public required AssessmentResult AssessmentResult { get; set; } = null!;
 
         public int QuestionId { get; set; }
-        public Question Question { get; set; }
+        public required Question Question { get; set; } = null!;
 
         public int Frequency { get; set; }
-        public string Unit { get; set; }
+        [MaxLength(15)]
+        public required string Unit { get; set; }
     }
 }

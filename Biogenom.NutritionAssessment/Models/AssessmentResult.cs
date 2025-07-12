@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Biogenom.NutritionAssessment.Models
@@ -10,12 +8,14 @@ namespace Biogenom.NutritionAssessment.Models
 
         public DateTime CreatedAt { get; set; }
 
-        public string DeficiencySummary { get; set; }
+        [MaxLength(255)]
+        public required string DeficiencySummary { get; set; }
 
-        public string Recommendation { get; set; }
+        [MaxLength(500)]
+        public required string Recommendation { get; set; }
 
         public int TotalScore { get; set; }
 
-        public ICollection<Answer> Answers { get; set; }
+        public ICollection<Answer> Answers { get; set; } = new List<Answer>();
     }
 }

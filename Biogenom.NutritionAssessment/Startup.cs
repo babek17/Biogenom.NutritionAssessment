@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Biogenom.NutritionAssessment.Data;
+using Biogenom.NutritionAssessment.Services;
 
 namespace Biogenom.NutritionAssessment
 {
@@ -17,6 +18,8 @@ namespace Biogenom.NutritionAssessment
             services.AddControllers();
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
+            services.AddScoped<IAssessmentService, AssessmentService>();
+            
 
             services.AddDbContext<AppDbContext>(options =>
                 options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
