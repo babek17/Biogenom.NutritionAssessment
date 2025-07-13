@@ -21,8 +21,6 @@ The API:
 - Entity Framework Core
 - PostgreSQL (Dockerized)
 - Layered architecture (Controller → Service → Repository)
-
-📄 [View Nutrition Result Screenshot (PDF)](appView.png)
 ---
 
 ## 📁 Project Structure
@@ -46,4 +44,5 @@ The API:
 │   └── diagram.png (database schema)
 ├── README.md
 
+<img width="759" height="946" alt="appView" src="https://github.com/user-attachments/assets/f2551960-888c-40b6-9415-41a0f763cf23" />
 
