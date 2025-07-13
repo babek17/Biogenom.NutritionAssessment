@@ -22,6 +22,7 @@ The API:
 - PostgreSQL (Dockerized)
 - Layered architecture (Controller → Service → Repository)
 
+📄 [View Nutrition Result Screenshot (PDF)](appView.png)
 ---
 
 ## 📁 Project Structure
@@ -45,4 +46,4 @@ The API:
 │   └── diagram.png (database schema)
 ├── README.md
 
-📄 [View Nutrition Result Screenshot (PDF)](appView.png)
+
