@@ -18,19 +18,19 @@ namespace Biogenom.NutritionAssessment.Data
         {
             if (!AssessmentResults.Any())
             {
-                var step = new Step { StepNumber = 1, Title = "Fruits and Vegetables" };
+                var step = new Step { StepNumber = 1, Title = "Алкоголь" };
                 Steps.Add(step);
 
-                var question1 = new Question { Text = "How often do you eat apples?", Step = step };
-                var question2 = new Question { Text = "How often do you eat spinach?", Step = step };
+                var question1 = new Question { Text = "Пиво (любое)", Step = step };
+                var question2 = new Question { Text = "Вино (любое)", Step = step };
                 Questions.AddRange(question1, question2);
 
                 var result = new AssessmentResult
                 {
                     Id = Guid.NewGuid(),
                     CreatedAt = DateTime.UtcNow,
-                    DeficiencySummary = "Low in Iron and Vitamin D",
-                    Recommendation = "Eat more leafy greens and fish.",
+                    DeficiencySummary = "Витамин D (кальциферол): 7.62 при норме 15 мкг",
+                    Recommendation = "Витамин D (кальциферол): 7.62 + 50 мкг",
                     TotalScore = 65
                 };
                 AssessmentResults.Add(result);
@@ -41,7 +41,7 @@ namespace Biogenom.NutritionAssessment.Data
                     AssessmentResult = result,
                     Question = question1,
                     Frequency = 3,
-                    Unit = "week"
+                    Unit = "раза в месяц"
                 },
                 new Answer
                 {
@@ -49,7 +49,7 @@ namespace Biogenom.NutritionAssessment.Data
                     AssessmentResult = result,
                     Question = question2,
                     Frequency = 1,
-                    Unit = "week"
+                    Unit = "Каждый день"
                 });
 
                 SaveChanges();

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Biogenom.NutritionAssessment")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+beb880a5d4feedc35bf575f90dd897eb2de0e06e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f4daa2fd895e5f9568265b1b4c8808d23daca7a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Biogenom.NutritionAssessment")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Biogenom.NutritionAssessment")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
