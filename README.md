@@ -44,3 +44,5 @@ The API:
 ├── docs/
 │   └── diagram.png (database schema)
 ├── README.md
+
+📄 [View Nutrition Result Screenshot (PDF)](appView.png)
