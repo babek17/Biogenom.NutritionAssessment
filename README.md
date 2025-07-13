@@ -44,5 +44,5 @@ The API:
 │   └── diagram.png (database schema)
 ├── README.md
 
-<img width="759" height="946" alt="appView" src="https://github.com/user-attachments/assets/f2551960-888c-40b6-9415-41a0f763cf23" />
+<img width="759" height="946" alt="appView" src="(https://github.com/babek17/Biogenom.NutritionAssessment/blob/ec3f51b14cb3c430e589a0dfd5f2ffa057b4d9d6/appView.png)" />
 
