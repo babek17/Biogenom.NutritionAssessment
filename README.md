@@ -23,7 +23,7 @@ The API:
 - Layered architecture (Controller → Service → Repository)
 ---
 
-<img width="759" height="946" alt="appView" src="(https://github.com/babek17/Biogenom.NutritionAssessment/blob/ec3f51b14cb3c430e589a0dfd5f2ffa057b4d9d6/appView.png)" />
+![img alt](https://github.com/babek17/Biogenom.NutritionAssessment/blob/ec3f51b14cb3c430e589a0dfd5f2ffa057b4d9d6/appView.png)
 
 
 ## 📁 Project Structure
